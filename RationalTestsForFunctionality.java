@@ -4,8 +4,9 @@ import static org.junit.Assert.*;
 public class RationalTestsForFunctionality{
 	@Test
 	public void testEqualsDifferentClassesOrNull(){
-		Rational object = new Rational(1,3);
+		Rational object = new Rational(7,1);
 		String str = "example";
+		assertFalse("Method 'equals' returns wrong result",object.equals(7));
 		assertFalse("Method 'equals' returns wrong result for different classes",object.equals(str));
 		assertFalse("Method 'equals' returns wrong result for null",object.equals(null));
 	}
